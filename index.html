@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="estilos/base.css" media="all">
     <title>Brasa Burguer</title>
 </head>
@@ -11,21 +12,20 @@
         <h1>Brasa Burguer</h1>
         <p>Assado na brasa, devorado na raça!</p>
     </header>
-    <menu>
+     <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+    <menu id="itens">
         <ul>
-            <li><a href="#">Ínicio</a></li>
-            <li><a href="#">Restaurantes</a></li>
-            <li><a href="#">Istitucional</a></li>
-            <li><a href="#">Fale Conosco</a></li>
-            <li><a href="#">Pedidos</a></li>
+            <li><a href="#">ÍNICIO</a></li>
+            <li><a href="#">RESTAURANTES</a></li>
+            <li><a href="#">LOCALIZAÇÃO</a></li>
+            <li><a href="#">FALE CONOSCO</a></li>
+            <li><a href="#">PEDIDOS</a></li>
         </ul>
     </menu>
     <main>
         <section>
             <h2>Sabor que Nasce na Brasa</h2>
-            <p>Na Brasa Burguer, o segredo está na chama. Apaixonados por hambúrgueres artesanais, com ingredientes frescos e de qualidade, nossos hambúrgueres são preparados na brasa, garantindo crocância, suculência e um aroma que conquista já na primeira mordida.</p>
-            <p>Cadastres e seja o primeiro a receber nossas novidades e promoções quentinhas na brasa!</p>
-            <p><a href="#">Faça o Cadastro</a></p>
+            <p>Na Brasa Burguer, o segredo está na <strong><em>chama</em></strong>. Apaixonados por <strong><em>hambúrgueres artesanais</em></strong>, com ingredientes frescos e de qualidade, nossos hambúrgueres são <strong><em>preparados na brasa</em></strong>, garantindo crocância, suculência e um aroma que conquista já na primeira mordida.</p>
             <h2>Nosso Cardápio</h2>
             <h3>Hambúrgueres</h3>
             <a href="#"><img src="imagens/Hamburgueres330.png" alt=""></a>
@@ -35,10 +35,34 @@
             <a href=""><img src="imagens/Acompanhamentos330.png" alt=""></a>
             <h3>Combo</h3>
             <a href=""><img src="imagens/Combos330.png" alt=""></a>
+            <h2>Promoções</h2>
+            <aside>
+                <ul>
+                    <li>Quarta do Dobro - Peça 1 hambúrguer e ganhe o segundo burguer em dobro de carne sem custo adicional.</li>
+                    <li>Sextou na Brasa - Comprou 2 hambúrguer especiais, ganhou 1 porção de batata rústica.</li>
+                    <li>Brasa Birthday - Aniversariante do mês ganha 1 Brasa Clássico grátis na compra de qualquer combo.</li>
+                    <li>Desafio da Brasa - Termine o Giga Braseiro (400g) em até 15 minutos e ganhe 50% de desconto na próxima visita.</li>
+                </ul>
+            </aside>
+            <h2>Clube da Brasa</h2>
+            <p>Cadastre-se no nosso site e receba cupons exclusivos, novidades e promoções antes de todo mundo.</p>
+            <p><a href="#">Faça o Cadastro</a></p>
+            <h2>Sobre Nós</h2>
+            <p> A Brasa Burguer nasceu da paixão pelo sabor defumado da brasa. Nosso objetivo é simples: transformar hambúrguer artesanal em uma experiência inesquecível. Trabalhamos com carnes selecionadas, ingredientes frescos e aquele toque especial do fogo, que faz cada mordida ser única. Aqui, você encontra mais do que comida — encontra sabor, calor e momentos que ficam na memória.</p>
         </section>
     </main>
     <footer>
-        
+        <h3>Brasa Burguer</h3>
+        <p>O sabor que vem da brasa, feito para você. <p>📍 Rua da Fumaça, 123 – Centro, Saborlândia <br> 📞 (00) 91234-5678 | ✉ contato@brasaburguer.com <br> 📲 Siga: @BrasaBurguer <br> <br> © 2025 Brasa Burguer – Todos os direitos reservados.</p></p>
     </footer>
+     <script>
+        function clickMenu(){
+            if (itens.style.display == 'block'){
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
