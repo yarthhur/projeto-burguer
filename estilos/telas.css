@@ -1,3 +1,15 @@
 @charset "UTF-8";
 
-/* TABLET */
+
+@media (orientation: landscape){
+    section > a > img{
+        display: inline-block;
+        width: 219px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    aside{
+        width: 96.3vw;
+    }
+}
