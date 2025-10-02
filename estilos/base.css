@@ -207,5 +207,20 @@ section > aside > p > a:hover{
 }
 
 footer{
+    background-image: linear-gradient(to bottom, var(--cor5), var(--cor4) );
+    color: var(--cor1);
+    padding: 10px;
+}
+
+footer > h3{
+    text-align: center;
+    font-size: 2em;
+    font-family: var(--fontBebas);
+    padding: 10px;
+    margin-bottom: 5px;
+    text-shadow: 2px 4px 3px #886002;
+}
+
+footer > p{
     
 }
