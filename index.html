@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="estilos/telas.css">
     <title>Brasa Burguer</title>
 </head>
-<body>
+<body onresize="menuTamanho()">
     <header>
         <h1>Brasa Burguer</h1>
         <p>Assado na brasa, devorado na raça!</p>
@@ -16,11 +16,11 @@
      <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
     <menu id="itens">
         <ul>
-            <li><p><a href="#">ÍNICIO</a></p></li>
-            <li><p><a href="#">CARDÁPIO</a></p></li>
-            <li><p><a href="#">LOCALIZAÇÃO</a></p></li>
-            <li><p><a href="#">FALE CONOSCO</a></p></li>
-            <li><p><a href="#">PEDIDOS</a></p></li>
+            <li><a href="#">ÍNICIO</a></li>
+            <li><a href="#">CARDÁPIO</a></li>
+            <li><a href="#">LOCALIZAÇÃO</a></li>
+            <li><a href="#">FALE CONOSCO</a></li>
+            <li><a href="#">PEDIDOS</a></li>
         </ul>
     </menu>
     <main>
@@ -62,9 +62,16 @@
         <p>Siga: @BrasaBurguer</p>
         <p> © 2025 Brasa Burguer – Todos os direitos reservados.</p>
         <p>Site criado por <a href="https://www.instagram.com/y.arthhur/" target="_blank">Arthur Alves</a></p> 
-        <p>Site feito para Mobile Version</p>
     </footer>
      <script>
+        function menuTamanho(){
+            if (window.innerWidth >= 768){
+                itens.style.display = 'block'
+            } else{
+                itens.style.display = 'none'
+            }
+        }
+
         function clickMenu(){
             if (itens.style.display == 'block'){
                 itens.style.display = 'none'

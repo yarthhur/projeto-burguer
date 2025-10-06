@@ -1,15 +1,22 @@
 @charset "UTF-8";
 
 
-@media (orientation: landscape){
-    section > a > img{
-        display: inline-block;
-        width: 219px;
-        padding-top: 30px;
-        padding-bottom: 30px;
+@media screen and (min-width: 768px) {
+    span#burguer{
+        display: none;
     }
 
-    aside{
-        width: 96.3vw;
+    menu{
+        display: block;
+        background-color: #323232;
+    }
+
+    menu > ul > li{
+        display: inline-block;
+    }
+    
+    menu > ul > li:hover{
+        background-color: #E3A008;
+        color: #323232;
     }
 }

@@ -97,7 +97,7 @@ menu > ul{
     text-decoration: none;
 }
 
-menu > ul > li > p > a{
+menu > ul > li > a{
     font-family: var(--fontGill);
     font-size: 1.1em;
     display: block;
