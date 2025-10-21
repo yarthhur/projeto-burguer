@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+
+    div#conteiner{
+        width: 90vw;
+        height: 300px;
+    }
+
+    div#conteiner > div#imagem{
+        float: left;
+        width: 30%;
+        height: 100%;
+        border-radius: 20px 0px 0px 20px;
+    }
+
+    div#conteiner > div#cadastro{
+        float: right;
+        width: 70%;
+        
+    }    
+}
+
+@media screen and (min-width: 992px){
+    div#conteiner{
+        width: 950px;
+        height: 400px;
+    }
+
+    div#conteiner > div#imagem{
+        float: right;
+        width: 50%;
+        height: 100%;
+        border-radius: 0px 20px 20px 0px;
+    }
+
+    div#conteiner > div#cadastro{
+        float: left;
+        width: 50%;
+    }
+
+    div#cadastro > h1{
+        font-size: 2.5em;
+    }
+
+    div#cadastro > p{
+        font-size: 1.2em;
+    }
+    
+}
